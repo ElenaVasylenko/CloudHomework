@@ -6,7 +6,7 @@ import java.util.*;
 public class Word implements Comparable  {
 
     String word;
-    public Set<Integer> docID = new LinkedHashSet<>();
+    public Set<Integer> docsId = new LinkedHashSet<>();
 
 
     Word(String word)
@@ -18,12 +18,12 @@ public class Word implements Comparable  {
 
     }
 
-    public Set<Integer> getDocID() {
-        return docID;
+    public Set<Integer> getDocsId() {
+        return docsId;
     }
 
-    public void setDocID(Set<Integer> docID) {
-        this.docID = docID;
+    public void setDocsId(Set<Integer> docsId) {
+        this.docsId = docsId;
     }
 
     public String getWord() {
@@ -36,8 +36,8 @@ public class Word implements Comparable  {
 
     @Override
     public String toString() {
-        //Collections.sort(docID);
-        return  word + ", docs:"+docID.toString();
+        //Collections.sort(docsId);
+        return  word + ", docs:"+ docsId.toString();
     }
 
     @Override

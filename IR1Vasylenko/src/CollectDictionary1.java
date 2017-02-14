@@ -6,7 +6,7 @@ import java.util.*;
 /**
  * Created by ovasylenko on 22-Jan-17.
  */
-public class CollectDictionary {
+public class CollectDictionary1 {
 
 
     static int uniqueWords = 0;
@@ -17,7 +17,7 @@ public class CollectDictionary {
     Set<String> dictionary;
 
 
-    CollectDictionary(Set<String> w){
+    CollectDictionary1(Set<String> w){
         dictionary = w;
     }
 
@@ -31,7 +31,7 @@ public class CollectDictionary {
         File[] files = path.listFiles();
 
         Set<String> dict = new LinkedHashSet<>();
-        CollectDictionary c = new CollectDictionary(dict);
+        CollectDictionary1 c = new CollectDictionary1(dict);
 
 
         //read all files in folder s
@@ -64,7 +64,7 @@ public class CollectDictionary {
                 //print in txt file
                 double docSize = newTextFile.length();
 
-                fw.append("WORDS:" + words);
+                fw.append("WORDS Number:" + words);
                 fw.append(System.lineSeparator());
                 fw.append("UNIQUE WORDS: " + dict.size());
                 fw.append(System.lineSeparator());

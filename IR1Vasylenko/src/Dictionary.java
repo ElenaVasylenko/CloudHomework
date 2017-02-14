@@ -65,7 +65,7 @@ public class Dictionary {
         for (int i = 0; i < uniqueWords; i++) {
             if(compareW(a, dict[i])) {
                 isAlready = true;
-                dict[i].docID.add(docId);
+                dict[i].docsId.add(docId);
                 break;
             }
         }
@@ -74,7 +74,7 @@ public class Dictionary {
         if(isAlready == false) {
 
             dict[uniqueWords] = a;
-            a.docID.add(docId);
+            a.docsId.add(docId);
             uniqueWords++;
 
         }
@@ -91,7 +91,7 @@ public class Dictionary {
 
         for (int i = 1; i <uniqueWords ; i++) {
             for (int j = 0; j < docs.size(); j++) {
-               if(dict[i].docID.contains(j)) incedenceMatrix[i][j] = 1;  //!!!!!!!!!!!!
+               if(dict[i].docsId.contains(j)) incedenceMatrix[i][j] = 1;  //!!!!!!!!!!!!
                else incedenceMatrix[i][j] = 0;
             }
         }

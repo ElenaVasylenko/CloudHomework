@@ -52,12 +52,12 @@ public class DictionaryTester {
                 if(d.uniqueWords == 0) {
                     w = new Word(word);
                     dict[0] = w;
-                    w.docID.add(z);
+                    w.docsId.add(z);
                     d.uniqueWords++;
                 }
 
                 w = new Word(word);
-                w.docID.add(z);
+                w.docsId.add(z);
                 d.addToDict(dict,w,z);
                 if(d.uniqueWords == dict.length-1){
                     dict = d.resizeArray(dict);
