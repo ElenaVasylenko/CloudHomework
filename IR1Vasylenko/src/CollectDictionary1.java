@@ -26,7 +26,7 @@ public class CollectDictionary1 {
 
         File newTextFile = new File("D:/dictionaryC.txt");
         FileWriter fw = new FileWriter(newTextFile);
-        Scanner fileScan = new Scanner(new File("1.txt"));
+        Scanner fileScan = new Scanner(new File("123.txt"));
         File path = new File("src/s/");
         File[] files = path.listFiles();
 
