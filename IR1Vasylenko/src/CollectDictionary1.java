@@ -28,7 +28,9 @@ public class CollectDictionary1 {
         FileWriter fw = new FileWriter(newTextFile);
         Scanner fileScan = new Scanner(new File("1.txt"));
         File path = new File("src/s/");
-        File[] files = path.listFiles();
+        //fngkngkjkngI am irochka keklol
+        
+        File[] files = pajfhfusksl();
 
         Set<String> dict = new LinkedHashSet<>();
         CollectDictionary1 c = new CollectDictionary1(dict);
